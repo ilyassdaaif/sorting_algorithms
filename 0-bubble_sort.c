@@ -1,5 +1,4 @@
 #include "sort.h"
-
 /**
  *bubble_sort - Function that sorts an array of ints
  *using bubble sort algorithm
@@ -8,7 +7,7 @@
  *@size: size of array
  *
  */
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size)
 {
 	int temp;
 	size_t i, k;
