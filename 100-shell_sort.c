@@ -12,7 +12,7 @@ size_t get_max_gap(size_t size)
 
 	n = 1;
 	while (n < size)
-		n = n * 3 +1;
+		n = n * 3 + 1;
 	return ((n - 1) / 3);
 }
 
