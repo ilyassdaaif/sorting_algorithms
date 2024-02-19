@@ -1,5 +1,5 @@
 #include "sort.h"
-#define parent(x) (((x) -1) / 2)
+#define parent(x) (((x) - 1) / 2)
 #define leftchild(x) (((x) * 2) + 1)
 
 /**
@@ -13,11 +13,11 @@
  */
 void swap(int *array, size_t size, int *a, int *b)
 {
-        if (*a != *b)
-        {
-                *a = *a + *b;
-                *b = *a - *b;
-                *a = *a - *b;
+if (*a != *b)
+{
+*a = *a + *b;
+*b = *a - *b;
+*a = *a - *b;
 	}
 	print_array((const int *)array, size);
 }
@@ -41,7 +41,8 @@ void siftdown(int *array, size_t start, size_t end, size_t size)
 		_swap = root;
 		if (array[_swap] < array[child])
 			_swap = child;
-		if (child + 1 <= end && array[_swap] < array[child + 1])
+		if (child + 1 <= end
+			&& array[_swap] < array[child + 1])
 			_swap = child + 1;
 		if (_swap == root)
 			return;
